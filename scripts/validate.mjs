@@ -14,7 +14,7 @@ for (const [id,profile] of Object.entries(profiles.profiles)) {
  state.products[0].price=base.products[0].variablePerUnit-1; const loss=calculateModel(state); assert.equal(loss.breakEvenUnits,null);
 }
 const tee=createInitialState(profiles,'nara-tee'); const teeReview=evaluateRisk(tee,profiles.profiles['nara-tee'],competitors); assert(teeReview.warnings.some(x=>x.includes('different product category')));
-const mat=createInitialState(profiles,'quickfold-mat'); const matReview=evaluateRisk(mat,profiles.profiles['quickfold-mat'],competitors); assert.equal(matReview.competitorPrices.length,4); assert(matReview.sources.length>=1);
+const mat=createInitialState(profiles,'quickfold-mat'); const matReview=evaluateRisk(mat,profiles.profiles['quickfold-mat'],competitors); assert.equal(matReview.competitorPrices.length,4); assert(matReview.sources.length>=1); assert(matReview.sources.every(src=>!/Printful|Google Brand/i.test(src.label))); 
 const annual={enabled:true,timing:'recurring',classification:'fixed',frequency:'annual',amount:120}; assert.equal(annualizedAmount(annual),120);
 const weekly={...annual,frequency:'weekly',amount:12}; assert.equal(annualizedAmount(weekly),624);
 const shared=calculateModel({...tee,products:[...tee.products,{...tee.products[0],id:'p2',price:40,salesPerMonth:10}],expenses:tee.expenses});

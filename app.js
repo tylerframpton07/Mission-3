@@ -502,7 +502,8 @@ function runEvaluation() {
   saveCurrentScenarioValues(state);
   const result=evaluateRisk(state,profile(),competitorData);
   result.competitorPrices=profile().competitorFit==="matched"?(competitorData.pricing_offers||[]).filter(o=>o.representative).map(o=>({name:o.competitor_name,price:Number(o.current_listed_price),verification:o.verification_status,url:o.source_url})):[];
-  result.sources=config.benchmarks.map(b=>({...b}));
+  const applicableBenchmarks=config.benchmarks.filter(b=>profile().competitorFit!=="matched" || /stripe/i.test(b.label));
+  result.sources=[...new Map([...result.sources,...applicableBenchmarks].map(source=>[source.url,source])).values()];
   state.evaluation=result;state.confirmation=null;save();renderDynamic();$("#review").scrollIntoView({behavior:"smooth"});
 }
 
