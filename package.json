@@ -1,0 +1,7 @@
+{
+  "name": "mission-3-pricing-laboratory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"test":"node scripts/validate.mjs", "build":"node scripts/build.mjs"}
+}

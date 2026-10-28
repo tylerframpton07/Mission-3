@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091013">
+  <meta name="description" content="An interactive pricing, cost, and break-even laboratory for venture decisions.">
+  <title>Ledger / Pricing & Cost Laboratory</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="Pricing laboratory home"><span class="brand-mark">L</span><span>LEDGER<span class="brand-sub">VENTURE LAB</span></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav-links" aria-label="Dashboard sections">
+        <a href="#overview" class="active"><i>01</i> Overview</a>
+        <a href="#costs"><i>02</i> Cost structure</a>
+        <a href="#products"><i>03</i> Products & pricing</a>
+        <a href="#breakeven"><i>04</i> Break-even</a>
+        <a href="#scenarios"><i>05</i> Scenarios</a>
+        <a href="#competition"><i>06</i> Competitive position</a>
+        <a href="#review"><i>07</i> Decision review</a>
+        <a href="#sources"><i>08</i> Sources & assumptions</a>
+      </nav>
+      <div class="side-spacer"></div>
+      <div class="storage-note"><span class="dot-live"></span><div><b>Saved in this browser</b><small>Changes stay on this device.</small></div></div>
+      <div class="side-actions">
+        <button class="side-action" id="export-config">Export working file <span>↗</span></button>
+        <button class="side-action" id="import-config">Import working file <span>↘</span></button>
+        <button class="side-action" id="reset-model">Restore suggested values <span>↺</span></button>
+      </div>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+      <div class="side-footer">MODEL VERSION 1.0 <span>·</span> USD</div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">FINANCIAL INTELLIGENCE <span>/</span> PRICING LABORATORY</div>
+        <div class="top-actions"><span class="snapshot-pill"><span class="dot-live"></span> LOCAL MODEL</span><button class="icon-button" id="help-button" aria-label="About this model">?</button></div>
+      </header>
+      <div class="container">
+        <div id="context-alert" class="context-alert" role="status"></div>
+        <section id="overview" class="section hero-section">
+          <div class="hero-copy">
+            <div class="eyebrow">MISSION 03 <span>·</span> COSTS, PRICE & SUSTAINABILITY</div>
+            <h1>Make the math<br><em>part of the decision.</em></h1>
+            <p class="hero-intro">Test how a price performs against the costs behind it. Every result follows your assumptions, and every unknown stays visible.</p>
+            <div class="hero-controls"><label for="venture-select">MODEL CONTEXT</label><select id="venture-select" aria-label="Select venture context"></select><span id="venture-context-status" class="context-status"></span></div>
+          </div>
+          <div class="hero-aside"><div class="ring-stamp"><span>PRICE<br>WITH<br>CONTEXT</span><b>↗</b></div><div class="as-of">MODEL PERIOD <b>12 MONTHS</b><br>MARKET SNAPSHOT <b id="research-date">—</b></div></div>
+          <div class="hero-bottom"><span>OPERATING MODEL</span><span class="hero-line"></span><span>01 / 08</span></div>
+        </section>
+
+        <section class="section" id="overview-metrics">
+          <div class="section-heading"><div><div class="eyebrow">YOUR CURRENT MODEL</div><h2>The economics at a glance</h2></div><span class="model-tag">STUDENT ASSUMPTIONS · NOT A FORECAST</span></div>
+          <div class="kpi-grid" id="kpis"></div>
+          <div class="summary-banner" id="summary-banner"></div>
+        </section>
+
+        <section class="section" id="costs">
+          <div class="section-heading"><div><div class="eyebrow">01 / COST STRUCTURE</div><h2>Know what the model carries.</h2><p>Adjust each line, switch it off, or add a cost. Startup cash is shown separately from recurring break-even costs.</p></div><button class="button button-outline" id="add-expense">＋ Add an expense</button></div>
+          <div class="cost-toolbar"><div id="cost-tabs" class="segmented"></div><div class="cost-total" id="cost-total"></div></div>
+          <div id="expense-list" class="expense-list"></div>
+          <div class="cost-footnote"><span>ⓘ</span><p>Researched values are published supplier or processor prices, not a guarantee for your exact product or checkout. Estimates are reasoned inputs; illustrative values are teaching placeholders. Your edits are labeled Student-entered. One-time startup purchases do not enter accounting break-even unless you turn on a depreciation period.</p></div>
+        </section>
+
+        <section class="section" id="products">
+          <div class="section-heading"><div><div class="eyebrow">02 / PRODUCT & PRICING</div><h2>Set the offer you want to test.</h2><p>Start from the product documented in your selected context. Add only the scenarios you want to compare.</p></div><button class="button button-outline" id="add-product">＋ Add product scenario</button></div>
+          <div id="product-list" class="product-grid"></div>
+          <div class="product-summary" id="product-summary"></div>
+        </section>
+
+        <section class="section" id="breakeven">
+          <div class="section-heading"><div><div class="eyebrow">03 / BREAK-EVEN ANALYSIS</div><h2>Find the volume that covers your costs.</h2><p>Break-even is a model result at constant price, cost, and sales mix. It is not a sales forecast.</p></div><label class="range-control">CHART RANGE <input type="number" id="chart-range" min="10" max="10000" step="10" value="250"><span>units / month</span></label></div>
+          <div class="chart-layout"><article class="panel chart-panel"><div class="panel-title"><div><h3>Revenue & total cost</h3><small>Monthly operating view · USD</small></div><span class="chart-legend"><i class="legend-revenue"></i>Revenue <i class="legend-cost"></i>Total cost</span></div><div id="breakeven-chart" class="chart-canvas"></div><div id="breakeven-note" class="chart-note"></div></article><article class="panel financial-bridge"><div class="panel-title"><div><h3>Contribution bridge</h3><small>Per sale unit at current price</small></div></div><div id="contribution-bridge"></div></article></div>
+        </section>
+
+        <section class="section" id="scenarios">
+          <div class="section-heading"><div><div class="eyebrow">04 / FINANCIAL SCENARIOS</div><h2>Separate the cases from the facts.</h2><p>Lean, Typical, and Expansion are editable operating assumptions. Higher spend never automatically increases unit sales.</p></div><button class="button button-outline" id="save-scenario">＋ Save current as custom</button></div>
+          <div id="scenario-cards" class="scenario-cards"></div>
+          <div class="chart-layout"><article class="panel chart-panel"><div class="panel-title"><div><h3>Monthly operating result</h3><small>At selected prices and cost assumptions</small></div></div><div id="scenario-chart" class="chart-canvas short-chart"></div></article><article class="panel chart-panel"><div class="panel-title"><div><h3>Where ongoing cost sits</h3><small>Click a category to filter expenses</small></div></div><div id="cost-chart" class="chart-canvas cost-chart"></div></article></div>
+          <div id="scenario-table" class="table-wrap"></div>
+          <div class="chart-layout sensitivity-layout"><article class="panel chart-panel"><div class="panel-title"><div><h3>Price & profit sensitivity</h3><small>Sales volume held at your current monthly assumption</small></div></div><div id="sensitivity-chart" class="chart-canvas short-chart"></div><p class="chart-caveat">Holding volume constant isolates price effects; real buyer demand may change as price changes.</p></article><article class="panel chart-panel"><div class="panel-title"><div><h3>Product-level contribution</h3><small>Shared overhead allocated by revenue share for display only</small></div></div><div id="product-chart" class="chart-canvas short-chart"></div></article></div>
+        </section>
+
+        <section class="section" id="competition">
+          <div class="section-heading"><div><div class="eyebrow">05 / COMPETITIVE POSITION</div><h2>Read the price beside the alternatives.</h2><p id="competition-intro"></p></div><div class="market-snapshot"><span>RESEARCH CHECKED</span><b id="market-date">—</b></div></div>
+          <div class="competitive-score" id="competitive-summary"></div>
+          <div id="competitor-list" class="competitor-grid"></div>
+          <div class="market-caveat" id="market-caveat"></div>
+        </section>
+
+        <section class="section decision-section" id="review">
+          <div class="section-heading"><div><div class="eyebrow">06 / DECISION REVIEW</div><h2>Stress-test your pricing decision.</h2><p>Risk labels summarize model conditions and evidence gaps. They do not estimate the probability of business failure.</p></div></div>
+          <div class="review-callout"><div class="review-icon">✳</div><div><h3>Pricing Decision Review</h3><p>Evaluate your current model to see the financial, competitive, and evidence risks that matter most for this product.</p></div><button class="button button-accent" id="evaluate">Evaluate my pricing decision <span>→</span></button></div>
+          <div id="evaluation-output" class="evaluation-output"></div>
+          <div id="confirm-workflow" class="confirm-workflow"></div>
+        </section>
+
+        <section class="section" id="sources">
+          <div class="section-heading"><div><div class="eyebrow">07 / METHOD & PROVENANCE</div><h2>See what is known and what is not.</h2><p>Sources and model limits stay attached to the costs they support. Prices are snapshots checked on the date shown.</p></div></div>
+          <div id="source-register" class="source-grid"></div>
+          <details class="method-details"><summary>How the model calculates results</summary><div id="method-copy"></div></details>
+        </section>
+        <footer class="page-footer"><span>LEDGER / PRICING LABORATORY</span><span>BUILT FOR DECISIONS, NOT CERTAINTY</span><span>MISSION 03</span></footer>
+      </div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,453 @@
+{
+  "dataset_title": "Quick-Fold Laundry Sorting Mat Competitive Pricing Research",
+  "research_date": "2026-10-27",
+  "venture": {
+    "name": null,
+    "working_name": "Quick-Fold Laundry Sorting Mat",
+    "concept": "A portable, hinged garment-folding mat intended to make laundry folding faster, more consistent, and usable in small spaces.",
+    "primary_product": "Quick-Fold Laundry Sorting Mat",
+    "target_customers": [
+      "College students and dorm residents",
+      "Young professionals in small apartments",
+      "Busy parents",
+      "Frequent travelers and RV/van-life users",
+      "Seniors or people with limited mobility",
+      "Gift buyers"
+    ],
+    "value_proposition": "For busy people with limited space, the Quick-Fold Mat aims to deliver fast, uniform folds in different settings, with magnetic latches, an anti-slip surface, portability, and durable flexible hinges.",
+    "geographic_market": {
+      "provided": null,
+      "working_scope": "United States online retail market for comparable products",
+      "assumption": "No city, state, or launch geography was provided; U.S. online listings in USD are used as an initial benchmark."
+    },
+    "channels": [
+      "Online marketplaces and e-commerce are venture opportunities stated in the brief; no final channel decision is provided."
+    ],
+    "features": [
+      "Durable hinged panels, intended for thousands of folds (venture brief claim, not independently validated)",
+      "Magnetic latches hold panels/folds in position",
+      "Anti-slip material",
+      "Portable and intended for home, dorm, small apartment, shared laundry room, and travel use"
+    ],
+    "unknowns": [
+      "Business name not provided",
+      "Launch geography not provided",
+      "Prototype and performance not validated",
+      "Manufacturing cost, BOM, target margin, and final dimensions not provided",
+      "Primary customer survey/interview findings not provided"
+    ]
+  },
+  "competitors": [
+    {
+      "id": "C1",
+      "name": "FlipFold",
+      "classification": "Direct",
+      "website": "https://flipfold.com/",
+      "geography": "United States; official site says it also ships to Canada and the UK",
+      "target_customers": "Households, students, and institutional/commercial users seeking uniform garment folds; brand names retailers, manufacturers, screen printers, embroiderers, and personal use.",
+      "products": "Adult and Junior shirt/laundry folders; adult and adult/junior multi-packs.",
+      "positioning": "Established branded folding tool with USA manufacture claim and premium direct-to-consumer price versus basic folders.",
+      "differentiators": "Four-panel hinged polypropylene board; non-skid rubber bumpers; airflow holes to reduce static; instructions for common garments; adult fold size 9 x 12 in, junior 7 x 10 in (FAQ).",
+      "reason": "Closest established U.S. branded folding-board substitute and useful premium benchmark."
+    },
+    {
+      "id": "C2",
+      "name": "BoxLegend",
+      "classification": "Direct",
+      "website": "https://boxlegend.net/",
+      "geography": "U.S.-facing online store; USD prices; shipping charged at checkout, free shipping threshold over $25 shown on homepage.",
+      "target_customers": "Consumers and households seeking fast folding and closet organization; product messaging includes family use and seasonal clothing storage.",
+      "products": "V1, V2, V3, V4, V5, and V7 shirt folder boards.",
+      "positioning": "Broad value-to-mid-market product ladder with several board versions and one promotional V7 reference price.",
+      "differentiators": "Multiple board designs/versions; official site promotes quick folding and organization; V7 price is explicitly marked sale. Product-level material/specification distinctions were not consistently available on the homepage.",
+      "reason": "Current direct brand with multiple public price points and a useful accessible-price benchmark."
+    },
+    {
+      "id": "C3",
+      "name": "Household Essentials",
+      "classification": "Direct",
+      "website": "https://www.householdessentials.com/",
+      "geography": "United States; product price checked on Target U.S. listing.",
+      "target_customers": "General household consumers seeking a simple shirt-folding aid.",
+      "products": "Shirt Folding Board for T-shirts, polos, and dress shirts (Target listing; partner-supplied detail).",
+      "positioning": "Mass-market basic utility item at a low-to-mid price, distributed through mainstream retail.",
+      "differentiators": "Step-by-step instructions; smooth-glide handle that removes folded garments and doubles as a hanging hook; plastic, foldaway construction.",
+      "reason": "A familiar retail alternative with similar use and distribution likely to overlap with students and households."
+    },
+    {
+      "id": "C4",
+      "name": "Hang It Up Laundry Service",
+      "classification": "Direct (niche product) / indirect (laundry service) means of reducing folding hassle",
+      "website": "https://www.hangituplaundry.com/product-page/folding-board",
+      "geography": "Laundry service business; service geography not established from product page. Online product listing.",
+      "target_customers": "Customers who want an attractive, easy-to-handle board; service customers seeking less laundry work.",
+      "products": "Custom acrylic Folding Board; the business also presents itself as a laundry service.",
+      "positioning": "Small-batch, design-led accessory positioned around the provider’s laundry service experience.",
+      "differentiators": "Clear acrylic, handle for removing the board, elongated format for multiple garment sizes; 7.5 x 11 in and 3 mm thick.",
+      "reason": "A highly relevant small-business product example whose handle and format are points of comparison for the venture’s ergonomic design."
+    }
+  ],
+  "pricing_offers": [
+    {
+      "id": "P01",
+      "competitor_id": "C1",
+      "competitor_name": "FlipFold",
+      "product_name": "FlipFold Shirt and Laundry Folder – Adult",
+      "description": "Adult folding board; official page lists $39.99 and 2,817 reviews. Page says made in USA; FAQ describes polypropylene, non-skid bumpers, and garment instructions.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 39.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "Four-panel hinged board",
+        "Non-skid bumpers",
+        "Instructions for common garments",
+        "Made in USA per official site"
+      ],
+      "representative": true,
+      "source_url": "https://flipfold.com/",
+      "source_type": "Official brand product/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Representative adult board. Site says board folds garments to a uniform 9 x 12 in and includes instructions for T-shirts, sweaters, pants, towels, etc."
+    },
+    {
+      "id": "P02",
+      "competitor_id": "C1",
+      "competitor_name": "FlipFold",
+      "product_name": "FlipFold Shirt and Laundry Folder – Junior",
+      "description": "Junior folding board, official page lists $39.99.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 39.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "Junior size; 7 x 10 in finished fold per official FAQ",
+        "Color variants"
+      ],
+      "representative": false,
+      "source_url": "https://flipfold.com/",
+      "source_type": "Official brand product/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Listed price captured on official store; product is a size variant."
+    },
+    {
+      "id": "P03",
+      "competitor_id": "C1",
+      "competitor_name": "FlipFold",
+      "product_name": "FlipFold Adult 2-Pack Combo",
+      "description": "Two adult boards sold together, official page lists $74.99.",
+      "pricing_model": "Bundling",
+      "current_listed_price": 74.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per bundle",
+      "features": [
+        "Two adult boards"
+      ],
+      "representative": false,
+      "source_url": "https://flipfold.com/",
+      "source_type": "Official brand product/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Bundle unit is two boards; do not compare bundle total to single-board prices without normalizing."
+    },
+    {
+      "id": "P04",
+      "competitor_id": "C1",
+      "competitor_name": "FlipFold",
+      "product_name": "FlipFold Adult & Junior 2-Pack Combo",
+      "description": "One adult and one junior board sold together, official page lists $74.99.",
+      "pricing_model": "Bundling",
+      "current_listed_price": 74.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per bundle",
+      "features": [
+        "One adult board and one junior board"
+      ],
+      "representative": false,
+      "source_url": "https://flipfold.com/",
+      "source_type": "Official brand product/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Bundle unit is two boards; do not compare bundle total to single-board prices without normalizing."
+    },
+    {
+      "id": "P05",
+      "competitor_id": "C2",
+      "competitor_name": "BoxLegend",
+      "product_name": "BoxLegend V1 Shirt Folder Board",
+      "description": "Folding board for shirt/laundry organization; official store product list.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 12.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "V1 folding-board model"
+      ],
+      "representative": false,
+      "source_url": "https://boxlegend.net/",
+      "source_type": "Official brand store/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Official home page lists price; product-specific detail not available in source view."
+    },
+    {
+      "id": "P06",
+      "competitor_id": "C2",
+      "competitor_name": "BoxLegend",
+      "product_name": "BoxLegend V2 Shirt Folder Board",
+      "description": "Folding board for shirt/laundry organization; official store product list.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 12.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "V2 folding-board model"
+      ],
+      "representative": true,
+      "source_url": "https://boxlegend.net/",
+      "source_type": "Official brand store/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Official home page lists price; product-specific detail not available in source view."
+    },
+    {
+      "id": "P07",
+      "competitor_id": "C2",
+      "competitor_name": "BoxLegend",
+      "product_name": "BoxLegend V3 Shirt Folder Board",
+      "description": "Folding board for shirt/laundry organization; official store product list.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 18.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "V3 folding-board model"
+      ],
+      "representative": false,
+      "source_url": "https://boxlegend.net/",
+      "source_type": "Official brand store/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Official homepage marks main V3 listing sold out; price is publicly listed but availability is constrained."
+    },
+    {
+      "id": "P08",
+      "competitor_id": "C2",
+      "competitor_name": "BoxLegend",
+      "product_name": "BoxLegend V4 Shirt Folder Board",
+      "description": "Folding board for shirt/laundry organization; official store product list.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 36.98,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "V4 folding-board model"
+      ],
+      "representative": false,
+      "source_url": "https://boxlegend.net/",
+      "source_type": "Official brand store/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Official home page lists price; product-specific detail not available in source view."
+    },
+    {
+      "id": "P09",
+      "competitor_id": "C2",
+      "competitor_name": "BoxLegend",
+      "product_name": "BoxLegend V5 Shirt Folder Board",
+      "description": "Folding board for shirt/laundry organization; official store product list.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 19.99,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "V5 folding-board model"
+      ],
+      "representative": false,
+      "source_url": "https://boxlegend.net/",
+      "source_type": "Official brand store/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Official home page lists price; product-specific detail not available in source view."
+    },
+    {
+      "id": "P10",
+      "competitor_id": "C2",
+      "competitor_name": "BoxLegend",
+      "product_name": "BoxLegend V7 Shirt Folder Board",
+      "description": "Folding board for shirt/laundry organization; official store product list.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 32.99,
+      "regular_price": 68.99,
+      "promotional_price": 32.99,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "V7 folding-board model"
+      ],
+      "representative": false,
+      "source_url": "https://boxlegend.net/",
+      "source_type": "Official brand store/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Promotional price shown as sale; homepage displays $68.99 crossed out. Crossed-out amount is captured as displayed reference price only and is not evidence it was historically charged."
+    },
+    {
+      "id": "P11",
+      "competitor_id": "C3",
+      "competitor_name": "Household Essentials",
+      "product_name": "Household Essentials Shirt Folding Board for T-Shirts, Polos and Dress Shirts",
+      "description": "Plastic foldaway board with instructions and handle/hook; dimensions 8.45 x 12.21 in. Listed at $14.97, regular $14.99; sold and shipped by Target Plus partner Storied Home.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 14.97,
+      "regular_price": 14.99,
+      "promotional_price": 14.97,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "Plastic foldaway board",
+        "Instructions for collared and non-collared shirts",
+        "Smooth-glide handle doubles as hanging hook"
+      ],
+      "representative": true,
+      "source_url": "https://www.target.com/p/-/A-1010194874",
+      "source_type": "Retailer product/pricing page (Target Plus partner listing)",
+      "research_date": "2026-10-27",
+      "verification_status": "Partially Verified",
+      "notes": "Retail product page shows $14.97 vs $14.99 regular, but item details supplied by Target Plus partner and Target disclaims full accuracy. The listed $0.02 difference is not meaningful evidence of an ongoing promotion."
+    },
+    {
+      "id": "P12",
+      "competitor_id": "C4",
+      "competitor_name": "Hang It Up Laundry Service",
+      "product_name": "Hang It Up Custom Acrylic Folding Board",
+      "description": "Custom clear acrylic folding board with handle; 7.5 x 11 in and 3 mm thickness; designed for multiple garment size ranges.",
+      "pricing_model": "One-time purchase",
+      "current_listed_price": 10.0,
+      "regular_price": null,
+      "promotional_price": null,
+      "currency": "USD",
+      "pricing_unit": "one-time purchase, per board or bundle",
+      "features": [
+        "Clear acrylic",
+        "Removal handle",
+        "Elongated format",
+        "7.5 x 11 in; 3 mm thick"
+      ],
+      "representative": true,
+      "source_url": "https://www.hangituplaundry.com/product-page/folding-board",
+      "source_type": "Official seller product/pricing page",
+      "research_date": "2026-10-27",
+      "verification_status": "Verified",
+      "notes": "Official listing shows $10.00 price. Shipping, tax, inventory, and service-area applicability are not stated on the captured page."
+    }
+  ],
+  "pricing_comparison": {
+    "basis": "Representative listed one-time board prices for four competitors; excludes bundle totals, the BoxLegend V3 sold-out listing, and BoxLegend V7 sale price because V2 is the selected representative. Prices are not adjusted for shipping/tax and product features are not identical.",
+    "representative_price_statistics": {
+      "minimum_formula": "MIN(representative prices)",
+      "maximum_formula": "MAX(representative prices)",
+      "average_formula": "AVERAGE(representative prices)",
+      "median_formula": "MEDIAN(representative prices)",
+      "minimum_value": 10.0,
+      "maximum_value": 39.99,
+      "average_value": 19.4875,
+      "median_value": 13.98
+    },
+    "representative_price_by_competitor": {
+      "C1": 39.99,
+      "C2": 12.99,
+      "C3": 14.97,
+      "C4": 10.0
+    },
+    "all_publicly_listed_offer_range": {
+      "minimum": 10.0,
+      "maximum": 74.99,
+      "note": "Range includes two-board bundles and BoxLegend’s sale reference offers, so it is not a like-for-like unit-price range."
+    }
+  },
+  "preliminary_pricing_recommendation": {
+    "tentative_range_usd": [
+      19.99,
+      29.99
+    ],
+    "position": "Above the lowest-price acrylic/basic boards and around-to-below the premium FlipFold adult board.",
+    "rationale": "A $19.99–$29.99 range is a hypothesis supported by the observed $10–$19.99 alternatives and $39.99 FlipFold single-board benchmark. Magnetic latches, grip, and portable use could support a modest premium over simple boards, but the venture’s cost, actual performance, willingness to pay, and prototype usability are unknown.",
+    "status": "Preliminary; not a final price and not an optimal-price claim."
+  },
+  "sources_and_limitations": {
+    "sources": [
+      {
+        "competitor": "FlipFold",
+        "product": "All relevant pricing offers captured in the dataset",
+        "source_url": "https://flipfold.com/",
+        "source_type": "Official brand store/pricing page",
+        "date_checked": "2026-10-27",
+        "verification_status": "Verified",
+        "missing_information": "Shipping total, any checkout discounts, and exact variant-specific shipping costs.",
+        "research_limitations": "Price page is live and can change; main page serves as product/pricing evidence."
+      },
+      {
+        "competitor": "BoxLegend",
+        "product": "All relevant pricing offers captured in the dataset",
+        "source_url": "https://boxlegend.net/",
+        "source_type": "Official brand store/home product list",
+        "date_checked": "2026-10-27",
+        "verification_status": "Verified",
+        "missing_information": "Model-specific specifications and variant inventory for most listed products.",
+        "research_limitations": "Home page lists prices; V3 is explicitly sold out and V7 price is promotional."
+      },
+      {
+        "competitor": "Household Essentials",
+        "product": "All relevant pricing offers captured in the dataset",
+        "source_url": "https://www.target.com/p/-/A-1010194874",
+        "source_type": "Retailer product/pricing page",
+        "date_checked": "2026-10-27",
+        "verification_status": "Partially Verified",
+        "missing_information": "Brand-side confirmation of price and partner-provided product specifications.",
+        "research_limitations": "Target Plus details are partner supplied; retailer price can vary."
+      },
+      {
+        "competitor": "Hang It Up Laundry Service",
+        "product": "All relevant pricing offers captured in the dataset",
+        "source_url": "https://www.hangituplaundry.com/product-page/folding-board",
+        "source_type": "Official seller product/pricing page",
+        "date_checked": "2026-10-27",
+        "verification_status": "Verified",
+        "missing_information": "Shipping, tax, inventory, target geography, service area.",
+        "research_limitations": "Small-business listing; current page shows price but no shipping terms."
+      }
+    ],
+    "limitations": [
+      "No launch geography or brand name was specified; U.S. online prices are used as an assumption.",
+      "Prices and availability can change; checked 2026-10-27.",
+      "Shipping, tax, discounts at checkout, and third-party marketplace dynamics excluded.",
+      "BoxLegend homepage lists six variants but accessible detail and current inventory are limited; V3 was explicitly sold out.",
+      "Household Essentials price/specifications are from a Target Plus partner listing (partially verified), not the brand’s own product page.",
+      "Hang It Up service footprint and shipping terms are not stated on the folding-board page.",
+      "No apples-to-apples controlled test of folding time, fold consistency, material durability, magnetic-latch utility, or portability was available.",
+      "The venture workspace contains no validated manufacturing cost, target margin, prototype test, primary research findings, or willingness-to-pay data.",
+      "Competitor prices benchmark listed products; they do not establish optimal demand or profitability."
+    ]
+  }
+}
