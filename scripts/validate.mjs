@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { calculateModel, modelIntegrityCheck, createInitialState, evaluateRisk, saveCurrentScenarioValues, annualizedAmount } from '../model.js';
 import { buildConfirmedExport, buildReportDocument, reportModelForTest } from '../report.js';
@@ -22,6 +24,6 @@ const review=evaluateRisk(exportState,profiles.profiles['nara-tee'],competitors)
 const report=reportModelForTest(profiles.profiles['nara-tee'],exportState,review,{repositoryUrl:profiles.profiles['nara-tee'].repositoryUrl,liveUrl:profiles.profiles['nara-tee'].liveUrl});
 assert.equal(report.data.confirmation.confirmed,true); assert.equal(JSON.parse(JSON.stringify(report.data)).venture.name,'Google Nara Tee'); assert(report.data.sourcesAndLimitations.benchmarkSources.length>=1); assert(report.evaluation.sensitivitySummary);
 const doc=buildReportDocument(report); assert.equal(new TextDecoder().decode(doc.slice(0,2)),'PK');
-await (await import('node:fs/promises')).writeFile('/private/tmp/mission3-test-report.docx',doc);
-await (await import('node:fs/promises')).writeFile('/private/tmp/mission3-test-export.json',JSON.stringify(report.data,null,2));
+await (await import('node:fs/promises')).writeFile(join(tmpdir(),'mission3-test-report.docx'),doc);
+await (await import('node:fs/promises')).writeFile(join(tmpdir(),'mission3-test-export.json'),JSON.stringify(report.data,null,2));
 console.log('Financial, profile, pricing-period, risk-context, JSON, and DOCX header checks passed.');
